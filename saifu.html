@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgba(229, 147, 220, 0.5);
+            font-family: Arial, sans-serif;
+        }
+        .first{
+            text-align: center;
+            margin-top: 15%;
+        }
+        .first img{
+            width: 200px;
+            height: 200px;
+            border: 0px solid aqua;
+            border-radius: 100%;
+        }
+        h1{
+            color: gray;
+        }
+        
+        #element{
+            color:  rgb(109, 13, 198);
+        }
+        .two{
+            margin-top: 30px;
+
+        }
+        .imgcontainer{
+            text-align: center;
+            display: grid;
+            width: 40%;
+            justify-content: center;
+            margin-left: 25%;
+
+        }
+        .imgcontainer img{
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+            margin-bottom: 30px;
+            box-shadow: 0 0 6px black,0 0 6px black;
+            border-radius: 5px;
+        }
+        .imgcontainer  a{
+            text-align: center;
+            display: flex;
+            background-color:white;
+            padding: 15px;
+            margin: 5px;
+            border: 3px solid white;
+            box-shadow: 4px 6px black, 0px 0px 4px black;
+            text-decoration: none;
+            border-radius: 10px;
+            width: 150%;
+            height: 55%;
+            
+        }
+        .inst{
+            font-size: 20px;
+            padding-left: 30px;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <section class="first">
+       <div class="top">
+        <img src="dp.jpg .jpg" alt="saif ali">
+        <div>
+            <h1>Mohammad <span>saif</span> ali</h1>
+            <p>Software Developer</p>
+            <span id="element"></span>
+        </div>
+       </div>
+    </section>
+
+    <section class="two">
+      <div class="imgcontainer">
+        <a href="https://www.instagram.com/saif__sahab_09">
+            <img src="insta.png" alt="instagram">
+            <span class="inst">Instagram</span>
+        </a>
+        <a href="https://wa.me/919508107544?text=Hello">
+            <img src="what.jpg" alt="instagram">
+            <span class="inst">Whatsapp</span>
+        </a>
+        <a href="https://github.com/mdsaifali09" target="_blank">
+            <img src="GitHub-Symbol.png" alt="instagram">
+            <span class="inst">GitHub</span>
+        </a>
+        <a href="https://leetcode.com/mdsaifali09/" target="_blank"">
+            <img src="letcode.png" alt="instagram">
+            <span class="inst">Letcode</span>
+        </a>
+        <a href="https://www.linkedin.com/in/md saif ali">
+            <img src="logo-linkedin-5.jpg" alt="instagram">
+            <span class="inst">Linkedin</span>
+        </a>
+      </div>
+    </section>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+     <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'Video Editor', 'Web Designer'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
